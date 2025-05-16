@@ -1,0 +1,5 @@
+[phases.setup]
+nixPkgs = ["php81"]
+
+[start]
+cmd = "vendor/bin/heroku-php-apache2"
