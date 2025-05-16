@@ -1,0 +1,8 @@
+{
+  "mounts": [
+    {
+      "source": "uploads",
+      "destination": "/app/uploads"
+    }
+  ]
+}
