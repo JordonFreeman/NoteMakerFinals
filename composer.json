@@ -1,15 +1,25 @@
 {
-    "name": "vendor/autoload",
-    "description": "Dependancy",
+    "name": "notekeeper/note-application",
+    "description": "A PHP note-taking application with sharing and security features",
+    "type": "project",
     "autoload": {
         "psr-4": {
-            "Vendor\\Autoload\\": "src/"
+            "App\\": "src/"
         }
     },
     "require": {
+        "php": "^8.0",
+        "ext-pdo": "*",
+        "ext-json": "*",
         "phpmailer/phpmailer": "^6.9",
         "spomky-labs/otphp": "^11.3",
-        "endroid/qr-code": "^6.0",
-        "php": "^8.0"
-    }
+        "endroid/qr-code": "^6.0"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
