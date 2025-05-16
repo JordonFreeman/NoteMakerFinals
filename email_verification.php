@@ -45,6 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $reset_link = "http://localhost/Finals/reset_password.php?token=" . $token;
 
             $mail = new PHPMailer(true);
+            
             try {
                 $mail->CharSet = 'UTF-8';
                 $mail->isSMTP();
